@@ -1,13 +1,13 @@
+let date = ""
+let time = ""
+let dateTime = ""
 function readTime () {
     date = "" + DS3231.date() + "/" + DS3231.month() + "/" + DS3231.year()
-    time = "" + DS3231.hour() + "/" + DS3231.minute() + "/" + DS3231.second()
+    time = "" + DS3231.hour() + ":" + DS3231.minute() + ":" + DS3231.second()
     dateTime = "" + date + " " + time
 }
 input.onButtonPressed(Button.A, function () {
+    readTime()
     basic.showString(dateTime)
     serial.writeString(dateTime)
 })
-let time = ""
-let date = ""
-let dateTime = ""
-dateTime = ""
