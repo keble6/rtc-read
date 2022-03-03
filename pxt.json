@@ -1,5 +1,5 @@
 {
-    "name": "RTC-read",
+    "name": "RTC",
     "description": "",
     "dependencies": {
         "core": "*",
