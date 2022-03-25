@@ -49,7 +49,7 @@ function setTimeDate () {
     command = stringIn.substr(0, 2)
     if (command == "st") {
         setTime()
-    } else {
+    } else if (command == "sd") {
         setDate()
     }
 }
